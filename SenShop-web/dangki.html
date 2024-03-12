@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dangki</title>
+    <link rel="stylesheet" type="text/css" href="css/dk.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        input[type="tex"] {
+        width: 350px;
+        box-sizing: border-box;
+        border: 1px solid rgb(240, 243, 92);
+        border-radius: 10px;
+        outline:none;
+        padding: 5px 14px;
+        }
+        .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+        }
+        .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left:0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin:0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive-phản ứng nhanh nhẹn*/
+        @media(max-width: 767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        }
+        @media(max-width: 574px){
+        .footer-col{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 menu">
+					<a href="Home.html"><img src="uploads/logo.png"></a>
+				</div>
+				<div class="col-2">
+					<h5><a href="Home.html">SenShop</a></h5>
+				</div>
+				<div class="col-8 menu">
+					<ul>
+						<li>
+							<form>
+								<input type="tex" name="search" placeholder="search something...">
+							</form>
+						</li>
+						<li><a href="Home.html">Trang chủ</a></li>
+						<li><a href="">Sản phẩm</a>
+							<ul class="menu_child">
+								<li><div class="btn-cart"><a href="thucung.html">Thú Cưng</a></div></li>
+								<li><div class="btn-cart"><a href="food.html">Thức ăn</a></div></li>
+								<li><div class="btn-cart"><a href="dodung.html">Đồ dùng(quần áo,...)</a></div></li>
+							</ul>
+						</li>
+						<li><a href="">Liên hệ</a>
+							<ul class="menu_child">
+								<li><div class="btn-cart"><a href="">0123456789</a></div></li>
+							</ul>
+						</li>
+						<li><a href="">Hướng dẫn</a></li>
+					</ul>
+				</div>
+				<div class="col-9 menu">
+					<a href="cart.html"><img src="./uploads/cart.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</header>
+    <article>
+        <section>
+                     <form action="#" method="post" name="dangky" onSubmit="kiemtrathongtin()">
+                        <div id="dktv">
+                            <p>ĐĂNG KÝ THÀNH VIÊN</p>
+                        </div>
+                        <div id="dangky">
+                            <fieldset id="thongtincn">
+                                <legend><b>Thông tin cá nhân</b></legend>
+                                <table width="700" cellpadding="0" cellspacing="2" >
+                                    <tr>
+                                        <td width="148" height="24" >
+                                            <p>Họ và tên:</p>
+                                        </td>
+                                        <td>
+                                            <input id="hoten" type="text" name="txthoten">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ngày sinh:
+                                        </td>
+                                        <td>
+                                            <select name="ngay">
+                                                <option value="1" selected>1</option>
+                                                <option value="2" >2</option>
+                                                <option value="3" >3</option>
+                                                <option value="4" >4</option>
+                                                <option value="5" >5</option>
+                                                <option value="6" >6</option>
+                                                <option value="7" >7</option>
+                                                <option value="8" >8</option>
+                                                <option value="9" >9</option>
+                                                <option value="10" >10</option>
+                                                <option value="11" >11</option>
+                                                <option value="12" >12</option>
+                                                <option value="13" >13</option>
+                                                <option value="14" >14</option>
+                                                <option value="15" >15</option>
+                                                <option value="16" >16</option>
+                                                <option value="17" >17</option>
+                                                <option value="18" >18</option>
+                                                <option value="19" >19</option>
+                                                <option value="20" >20</option>
+                                                <option value="21" >21</option>
+                                                <option value="22" >22</option>
+                                                <option value="23" >23</option>
+                                                <option value="24" >24</option>
+                                                <option value="25" >25</option>
+                                                <option value="26" >26</option>
+                                                <option value="27" >27</option>
+                                                <option value="28" >28</option>
+                                                <option value="29" >29</option>
+                                                <option value="30" >30</option>
+                                                <option value="31" >31</option>
+                                            </select>
+                                            Tháng 
+                                            <select name="thang">
+                                                <option value="1" selected>1</option>
+                                                <option value="2" >2</option>
+                                                <option value="3" >3</option>
+                                                <option value="4" >4</option>
+                                                <option value="5" >5</option>
+                                                <option value="6" >6</option>
+                                                <option value="7" >7</option>
+                                                <option value="8" >8</option>
+                                                <option value="9" >9</option>
+                                                <option value="10" >10</option>
+                                                <option value="11" >11</option>
+                                                <option value="12" >12</option>
+                                             </select>
+                                            Năm
+                                            <input id="nam" width="70" type="text" name="txtnam">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="27">
+                                            <p>Giới tính:</p>
+                                        </td>
+                                        <td>
+                                            <input type="radio" value="Nam" checked name="gioitinh">
+                                            Nam
+                                            <input type="radio" value="Nữ" name="gioitinh">
+                                            Nữ
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Địa chỉ:
+                                        </td>
+                                        <td>
+                                            <textarea></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="23">
+                                            <p>Điện thoại:</p>
+                                        </td>
+                                        <td>
+                                            <input type="tel">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25">
+                                            Email:
+                                        </td>
+                                        <td>
+                                            <input id="email" type="email" name="txtemail">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                            <fieldset id="thongtindn">
+                                <legend><b>Thông tin đăng nhập</b></legend>
+                                <table width="700" cellspacing="2">
+                                    <tr>
+                                        <td width="155">
+                                            Tên đăng nhập:
+                                        </td>
+                                        <td>
+                                            <input id="tendangnhap" type="text" name="txttendangnhap">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Mật khẩu:</p>
+                                        </td>
+                                        <td>
+                                            <input id="matkhau" type="password" name="txtmatkhau">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Nhập lại mật khẩu:
+                                        </td>
+                                        <td>
+                                            <input id="nhaplaimatkhau" type="password" name="txtnhaplaimatkhau">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                            <div align="center">
+                                <input type="submit" onClick="return kiemta()" value="Đăng ký">
+                                <input type="reset" value="Hủy">
+                            </div>
+                        </div>
+              </form>
+        </section>
+ </article>
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get  Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>62TH5</h4>
+                <ul>
+                    <li><a href="#">By team62th5</a></li>
+                    <li><a href="#">Đại học Thủy Lợi</a></li>
+                    <li><a href="#">175, Tây Sơn, Đống Đa, Hà Nội</a></li>
+                    <li><a href="#">SDT: 0123456789</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ <script language="javascript">
+    function kiemtrathongtin(){
+        var hoten= document.getElementById("hoten");
+        if(hoten.value==""){
+            alert("Vui lòng nhập Họ tên.");
+            hoten.focus();
+            return false;
+        }
+        var nam=document.getElementById("nam");
+        if(nam.value==""){
+            alert("Hãy điền năm sinh.");
+            nam.focus();
+            return false;
+        }
+        if(isNaN(nam.value)==true){
+            alert("Năm sinh phải là số.");
+            nam.value= " ";
+            nam.focus();
+            return false;	
+        }
+        var email=window.document.dangky.txtemail;
+        re=/\w+@\w+.\w+/;
+        if (email.value==""){
+            alert("Bạn chưa nhập email. ");
+            email.focus();
+            return false
+        }
+        else
+            if(re.test (email.value)==false){
+                alert("Email không đúng định dạng!");
+                email.focus();
+                return false
+            }
+            var tendangnhap= document.getElementById("tendangnhap");
+            if(tendangnhap.value==""){
+                alert("Vui lòng nhập Tên đăng nhập. ");
+                tendangnhap.focus();
+                return false;
+            }
+        var matkhau= document.getElementById("matkhau");
+            if(matkhau.value==""){
+                alert("Bạn chưa nhập Mật khẩu. ");
+                matkhau.focus();
+                return false;
+            }
+        var nhaplaimatkhau= document.getElementById("nhaplaimatkhau");
+            if(nhaplaimatkhau.value==""){
+                alert("Vui lòng nhập Lại mật khẩu. ");
+                nhaplaimatkhau.focus();
+                return false;
+            }
+            else
+            if(nhaplaimatkhau.value!= matkhau.value){
+                alert("Mật khẩu không khớp. ");
+                nhaplaimatkhau.focus();
+                return false;
+            }
+            
+        alert("Đăng ký thành công! Xin chúc mừng. "); 
+        return true;
+    }
+
+</script>
+</body>
+</html>

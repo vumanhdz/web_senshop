@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SenShop.com</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/boxchat.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<header class="sticky-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 menu">
+					<a href=""><img src="uploads/logo.png"></a>
+				</div>
+				<div class="col-2">
+					<h5><a href="">SenShop</a></h5>
+				</div>
+				<div class="col-8 menu">
+					<ul>
+						<li>
+							<form>
+								<input type="text" name="search" placeholder="search something...">
+							</form>
+						</li>
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="">Sản phẩm</a>
+							<ul class="menu_child">
+								<li><div class="btn-cart"><a href="thucung.html">Thời Trang</a></div></li>
+								<li><div class="btn-cart"><a href="food.html">Thức ăn</a></div></li>
+								<li><div class="btn-cart"><a href="dodung.html">Đồ dùng</a></div></li>
+							</ul>
+						</li>
+						<li><a href="">Liên hệ</a>
+							<ul class="menu_child">
+								<li><div class="btn-cart"><a href="">0123456789</a></div></li>
+							</ul>
+						</li>
+						<li><a href="">Hướng dẫn</a></li>
+					</ul>
+				</div>
+				<div class="col-9 menu">
+					<div class="cart-icon">
+						<p><i class="fas fa-shopping-cart" style="cursor: pointer;"></i><span>0</span><sup>sp</sup></p>
+					</div>
+					<div class="dn">
+						<ul>
+							<li><h3>Tài khoản</h3>
+								<ul class="menu_child">
+									<li><div class="btn-cart"><a href="dangnhap.html">Đăng nhập</a></div></li>
+									<li><div class="btn-cart"><a href="dangki.html">Đăng kí</a></div></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<br>
+	<div class="container slider-margin">
+		<div class="row">
+			<div class="col-12">
+					<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">
+				1/4
+			</div>
+			<img src="uploads/1.png" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">
+				2/4
+			</div>
+			<img src="uploads/2.jpg" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">
+				3/4
+			</div>
+			<img src="uploads/3.png" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">
+				4/4
+			</div>
+			<img src="uploads/thiet-ke-logo-thu-cung-18.gif" style="width: 100%;">
+			<div class="text">Caption</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<!-- <div style="text-align: center;">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot"onclick="currentSlide(3)"></span>
+		<span class="dot"onclick="currentSlide(4)"></span>
+	</div> -->
+			</div>
+		</div>
+		<section class="gio">
+			<i class="fas fa-times" style="cursor: pointer;"></i>
+			<h2>Giỏ Hàng</h2>
+			<form action="">
+				<table>
+					<thead>
+						<tr>
+							<th>Sản phẩm</th>
+							<th>giá</th>
+							<th>số lượng</th>
+							<th>chọn</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<div style="text-align: right;" class="gia">
+					<p style="font-weight: bold;">Tổng tiền:<span>0</span><sup>đ</sup></p>
+					<button type="button" class="btn"><a href="giohan.html">Giỏ Hàng</a></button>
+				</div>
+			</form>
+		</section>
+		<div class="row">
+			<div class="col-12 title">
+				<h3>Sản Phẩm tiêu biểu</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="1.html"><img class="img-prd" src="uploads/3 (1).jpeg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">mèo anh lông dài</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (1).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">mèo ba tư</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (10).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (11).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">mèo cảnh</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (12).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 0</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (13).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 1</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (14).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 2</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (15).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 3</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (16).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 4</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (17).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 5</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (18).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 6</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (19).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 7</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (2).jpeg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 8</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (2).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 9</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (3).jpeg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 10</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (3).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 11</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (4).jpeg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 12</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (4).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 13</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (5).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 14</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+			<div class="main-product">
+				<div class="content-product">
+					<div class="content-product-deltals">
+						<div class="price">
+							<div class="img-product">
+								<a href="y.html"><img class="img-prd" src="uploads/3 (6).jpg" alt=""></a>
+							</div>
+							<h3 class="content-product-h3">chó cảnh 15</h3>
+							<p><span class="money">25000</span><sup>đ</sup></p>
+						</div>
+					</div>
+					<button type="button" class="btn">Mua Hàng</button>
+					<button type="button" class="btn-cart">Thêm Vào Giỏ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get  Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>62TH5</h4>
+                    <ul>
+                        <li><a href="#">By team62th5</a></li>
+                        <li><a href="#">Đại học Thủy Lợi</a></li>
+                        <li><a href="#">175, Tây Sơn, Đống Đa, Hà Nội</a></li>
+                        <li><a href="#">SDT: 0123456789</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   <a href="https://www.facebook.com/messages/t/100210059123282" style="cursor: pointer;" class="nut-mo-chatbox" onclick="moForm()">Chat</a>
+</body>
+<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 1000);
+		}
+// ----------------------------------Lấy giá trị---------------------------
+		const acd = document.querySelectorAll("button")
+		acd.forEach(function(button,Home){
+		button.addEventListener("click",function(event){{
+			var acdItem = event.target
+			var product = acdItem.parentElement
+			var productImg = product.querySelector("img").src
+			var productname = product.querySelector("h3").innerText
+			var productmoney = product.querySelector("span").innerText
+			addcart(productImg, productmoney,productname)
+			
+		}})
+	})
+// --------------------------------Thêm vào giỏ hàng-----------------------
+		
+		function addcart(productImg, productmoney,productname) {
+			var addtr = document.createElement("tr")
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var prdT = document.querySelectorAll(".title")
+				if(prdT[i].innerHTML == productname){
+					alert("Sản phẩm đã có trong giỏ")
+
+					return
+				}
+			}
+			var trcontent = '<tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="'+productImg+'" alt=""><span class="title">'+productname+'</span></td><td><p><span class="prices">'+productmoney+'</span><sup>đ</sup></p></td><td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td><td ><span class="cart-delete">xóa</span></td></tr>'
+			addtr.innerHTML = trcontent
+			var cartTable = document.querySelector("tbody")
+			cartTable.append(addtr)
+			// lưu giỏ hàng
+
+			
+			// localStorage.setItem("manhdz",JSON.stringify(trcontent))
+
+			deletecart()
+			cartTT()
+		}
+// --------------------------------tổng tiền----------------------------------
+		function cartTT (){
+			var cartIteam = document.querySelectorAll("tbody tr")
+			var totalC = 0
+			// console.log(cartIteam.length)
+			for(var i=0;i<cartIteam.length;i++){
+				var inputValue = cartIteam[i].querySelector("input").value
+				// console.log(inputValue)
+				var productmoney = cartIteam[i].querySelector(".prices").innerHTML
+				// console.log(productmoney)
+				totalA = inputValue * productmoney
+				totalC = totalC + totalA
+				// totalD = totalC.toLocaleString('de-DE')
+			}
+			var cartTotalA = document.querySelector(".gia span")
+			var spgio = document.querySelector(".cart-icon span")
+			cartTotalA.innerHTML = totalC
+			spgio.innerHTML = cartIteam.length
+			inputchange()
+		}
+// ------------------------------xóa giỏ hàng-------------------------------
+		function deletecart() {
+			var cartIteam = document.querySelectorAll("tbody tr")
+			console.log(cartIteam)
+			for(var i=0;i<cartIteam.length;i++){
+		 		var prdT = document.querySelectorAll(".cart-delete")
+				prdT[i].addEventListener("click",function(event){
+					var cartDelet = event.target
+					var cartIT = cartDelet.parentElement.parentElement
+					cartIT.remove()
+					cartTT ()
+				})
+			}
+		}
+		function inputchange() {
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var inputValue = cartIteam[i].querySelector("input")
+				inputValue.addEventListener("change",function(){
+					cartTT ()
+				})
+			}
+		}
+		const x = document.querySelector(".fa-times")
+		const xshow = document.querySelector(".fa-shopping-cart")
+		xshow.addEventListener("click",function(){
+			document.querySelector(".gio").style.right = "0"
+		})
+		x.addEventListener("click",function(){
+			console.log(x)
+			document.querySelector(".gio").style.right = "-1000%"
+		})
+</script>
+</html>

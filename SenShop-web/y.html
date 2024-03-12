@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Comic Sans MS;
+        }
+        body { 
+            overflow-x: hidden; 
+            margin: 0;
+        }
+        h2 { 
+            text-align: left;
+            width: 100%; 
+        }
+        h3 { 
+            color: black; 
+        }
+        
+        .boxx{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            color: black;
+        }
+        .menuu{
+            text-align: left;
+            height: 50px;
+            color: rgb(216, 216, 2);
+        }
+        .left{
+            margin: 40px;
+            padding: auto;
+            width: 26%;
+            height: 100%;
+            float: left;
+        }
+        .content{
+            width: 40%;
+            height: 100%;
+            font-size: 17px;
+            float: left;
+        }
+        .right{
+            width: auto;
+        }
+        .lienquan{
+            padding: 10px;
+            width: 100%;
+            clear: both;
+        }
+        .m-4{
+            font-size: 25px;
+            color: rgb(216, 216, 2);
+        }
+        .chitiet{
+            color: rgb(216, 216, 2);
+            font-family: Comic Sans MS;
+        }
+        .box-content{
+            font-size: 16px;
+            font-family: Comic Sans MS;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        .container{
+            max-width: 1170px;
+            margin:auto;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            background-color: #24262b;
+            padding: 70px 0;
+        }
+        .footer-col{
+        width: 21%;
+        padding: 0 15px;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left:0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin:0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /* responsive-phản ứng nhanh nhẹn
+        
+        @media(max-width: 767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        }
+        @media(max-width: 574px){
+        .footer-col{
+            width: 100%;
+        }
+        } */
+        img{
+            border-radius: 5px;
+	        cursor: pointer;
+        }
+        .m-3{
+            padding: 5px;
+        }
+        .anhlq{
+            width: 5%;
+            margin: 3px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            background-color: chartreuse;
+        }
+        
+        .anhct{
+            width: 90%;
+        }
+
+    .stars form{
+    display: inline-block;
+    overflow: hidden;
+    }
+    div.stars {
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+        margin: 20px;
+        display: inline-block;
+    }
+    
+    input.star { display: none; }
+    
+    label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+    }
+    
+    input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+    }
+    
+    input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+    }
+    
+    input.star-1:checked ~ label.star:before { color: #F62; }
+    
+    label.star:hover { transform: rotate(-15deg) scale(1.3); }
+    
+    label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+    }
+    </style>
+</head>
+<section class="gio">
+    <i class="fas fa-times" style="cursor: pointer;"></i>
+    <h2>Giỏ Hàng</h2>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>giá</th>
+                    <th>số lượng</th>
+                    <th>chọn</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div style="text-align: right;" class="gia">
+            <p style="font-weight: bold;">Tổng tiền:<span>0</span><sup>đ</sup></p>
+            <button type="button" class="btn"><a href="giohan.html">Giỏ Hàng</a></button>
+        </div>
+    </form>
+</section>
+<header class="sticky-top"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-2 menu">
+                <a href="Home.html"><img src="uploads/logo.png"></a>
+            </div>
+            <div class="col-2">
+                <h5><a href="Home.html">SenShop</a></h5>
+            </div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <form>
+                            <input type="text" name="search" placeholder="search something...">
+                        </form>
+                    </li>
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="">Sản phẩm</a>
+                        <ul class="menu_child">
+                            <li><div class="btn-cart"><a href="thucung.html">Thú Cưng</a></div></li>
+                            <li><div class="btn-cart"><a href="food.html">Thức ăn</a></div></li>
+                            <li><div class="btn-cart"><a href="dodung.html">Đồ dùng(quần áo,...)</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Liên hệ</a>
+                        <ul class="menu_child">
+                            <li><div class="btn-cart"><a href="">0123456789</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hướng dẫn</a></li>
+                </ul>
+            </div>
+            <div class="col-9 menu">
+                <div class="cart-icon">
+                    <p><i class="fas fa-shopping-cart" style="cursor: pointer;"></i><span>0</span><sup>sp</sup></p>
+                </div>
+                <div class="dn">
+                    <ul>
+                        <li><h3>Tài khoản</h3>
+                            <ul class="menu_child">
+                                <li><div class="btn-cart"><a href="dangnhap.html">Đăng nhập</a></div></li>
+                                <li><div class="btn-cart"><a href="dangki.html">Đăng kí</a></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="wapper">
+        <div class="menuu">
+            <h2>Chi tiết sản phẩm</h2>
+        </div>
+        <div class="boxx">
+            <div class="left">
+                <img src="anh/anh1.png" class="anhct" width="400" height="400" alt="">
+            </div>
+            <div class="content">
+                <h2 class="chitiet">Chi tiết</h2>
+                <div class="box-content">
+                        <div>
+                            <img src="anh/anh1.png" class="anhct" width="0" height="0" alt="">
+                            <h3>Tên hàng: <h2>Chó becde</h2></h3>
+                            <br>
+                            <h3>Nguồn: china</h3>
+                            <br>
+                            <h3>Chủng loại: Mossaurus</h3>
+                            <br>
+                            <h3>Đơn giá: <span>25000</span><sup>đ</sup></h3>
+                            <br>
+                            <h3>Số lượng: 3</h3>
+                            <br>
+                            <h3>Thông tin: Đây là loài hung dữ đáng yêu tham ăn 
+                                lười ăn không được tích sự nhưng được cái lười 
+                                thì vô đối đã thế còn không biết coi nhà chuyên 
+                                ăn vụng loại này được lai từ hai loại pitbull và 
+                                con shiaba nhật bản bản tính vô cùng hiền lành và hung tợn
+                            </h3>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" class="btn" style="cursor: pointer;">Mua Hàng</button>
+                            <button type="button" class="btn-cart" style="cursor: pointer;">Thêm Vào Giỏ</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="right">
+            <h2 class="chitiet">Một số hình ảnh liên quan</h2>
+            <div class="m-1"></div>
+            <div class="m-2">
+                <div class="m-3">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">        
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                    <img src="anh/anh1.png" class="anhlq" width="100" alt="">
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="stars">
+        <h1>Đánh giá sản phẩm</h1>
+        <form action="">
+          <input class="star star-5" id="star-5" type="radio" name="star"/>
+          <label class="star star-5" for="star-5"></label>
+          <input class="star star-4" id="star-4" type="radio" name="star"/>
+          <label class="star star-4" for="star-4"></label>
+          <input class="star star-3" id="star-3" type="radio" name="star"/>
+          <label class="star star-3" for="star-3"></label>
+          <input class="star star-2" id="star-2" type="radio" name="star"/>
+          <label class="star star-2" for="star-2"></label>
+          <input class="star star-1" id="star-1" type="radio" name="star"/>
+          <label class="star star-1" for="star-1"></label>
+        </form>
+        <div>
+            <h1>Bình Luận</h1>
+            <br>
+                    <form action="">
+                        <input type="texxx" placeholder="Điền Bình Luận ....">
+                        <button><h1>Post</h1></button>
+                    </form>
+        </div>
+    </div>
+    <br>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h1>company</h1>
+                <br>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h1>Get  Help</h1>
+                <br>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h1>62TH5</h1>
+                <br>
+                <ul>
+                    <li><a href="#">By team62th5</a></li>
+                    <li><a href="#">Đại học Thủy Lợi</a></li>
+                    <li><a href="#">175, Tây Sơn, Đống Đa, Hà Nội</a></li>
+                    <li><a href="#">SDT: 0123456789</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h1>follow</h1>
+                <br>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const acd = document.querySelectorAll("button")
+		acd.forEach(function(button,Home){
+		button.addEventListener("click",function(event){{
+			var acdItem = event.target
+			var product = acdItem.parentElement.parentElement
+			var productImg = product.querySelector("img").src
+			var productname = product.querySelector("h2").innerText
+			var productmoney = product.querySelector("span").innerText
+			addcart(productImg, productmoney,productname)
+			
+		}})
+// --------------------------------Thêm vào giỏ hàng-----------------------
+		})
+		function addcart(productImg, productmoney,productname) {
+			var addtr = document.createElement("tr")
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var prdT = document.querySelectorAll(".title")
+				if(prdT[i].innerHTML == productname){
+					alert("Sản phẩm đã có trong giỏ")
+					return
+				}
+			}
+			var trcontent = '<tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="'+productImg+'" alt=""><span class="title">'+productname+'</span></td><td><p><span class="prices">'+productmoney+'</span><sup>đ</sup></p></td><td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td><td ><span class="cart-delete">xóa</span></td></tr>'
+			addtr.innerHTML = trcontent
+			var cartTable = document.querySelector("tbody")
+			// console.log(cartTable)
+			cartTable.append(addtr)
+            localStorage.setItem("manhdzz",JSON.stringify(trcontent))
+			deletecart()
+			cartTT()
+		}
+// --------------------------------tổng tiền----------------------------------
+		function cartTT (){
+			var cartIteam = document.querySelectorAll("tbody tr")
+			var totalC = 0
+			// console.log(cartIteam.length)
+			for(var i=0;i<cartIteam.length;i++){
+				var inputValue = cartIteam[i].querySelector("input").value
+				// console.log(inputValue)
+				var productmoney = cartIteam[i].querySelector(".prices").innerHTML
+				// console.log(productmoney)
+				totalA = inputValue * productmoney
+				totalC = totalC + totalA
+				// totalD = totalC.toLocaleString('de-DE')
+			}
+			var cartTotalA = document.querySelector(".gia span")
+			var spgio = document.querySelector(".cart-icon span")
+			cartTotalA.innerHTML = totalC
+			spgio.innerHTML = cartIteam.length
+			inputchange()
+		}
+// ------------------------------xóa giỏ hàng-------------------------------
+		function deletecart() {
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var prdT = document.querySelectorAll(".cart-delete")
+				prdT[i].addEventListener("click",function(event){
+					var cartDelet = event.target
+					var cartIT = cartDelet.parentElement.parentElement
+					cartIT.remove()
+					cartTT ()
+				})
+			}
+		}
+		function inputchange() {
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var inputValue = cartIteam[i].querySelector("input")
+				inputValue.addEventListener("change",function(){
+					cartTT ()
+				})
+			}
+		}
+		const x = document.querySelector(".fa-times")
+		const xshow = document.querySelector(".fa-shopping-cart")
+		xshow.addEventListener("click",function(){
+			document.querySelector(".gio").style.right = "0"
+		})
+		x.addEventListener("click",function(){
+			console.log(x)
+			document.querySelector(".gio").style.right = "-1000%"
+		})
+</script>
+</html>

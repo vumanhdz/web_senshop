@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dk.css">
+    <title>Document</title>
+</head>
+<header class="sticky-top"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-2 menu">
+                <a href="Home.html"><img src="uploads/logo.png"></a>
+            </div>
+            <div class="col-2">
+                <h5><a href="Home.html">SenShop</a></h5>
+            </div>
+            <div class="col-8 menu">
+                <ul>
+                    <li>
+                        <form>
+                            <input type="text" name="search" placeholder="search something...">
+                        </form>
+                    </li>
+                    <li><a href="Home.html">Trang chủ</a></li>
+                    <li><a href="">Sản phẩm</a>
+                        <ul class="menu_child">
+                            <li><div class="btn-cart"><a href="thucung.html">Thú Cưng</a></div></li>
+                            <li><div class="btn-cart"><a href="food.html">Thức ăn</a></div></li>
+                            <li><div class="btn-cart"><a href="dodung.html">Đồ dùng(quần áo,...)</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Liên hệ</a>
+                        <ul class="menu_child">
+                            <li><div class="btn-cart"><a href="">0123456789</a></div></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hướng dẫn</a></li>
+                </ul>
+            </div>
+            <div class="col-9 menu">
+                <div class="cart-icon">
+                    <p><i class="fas fa-shopping-cart" style="cursor: pointer;"></i><span>0</span><sup>sp</sup></p>
+                </div>
+                <div class="dn">
+                    <ul>
+                        <li><h3>Tài khoản</h3>
+                            <ul class="menu_child">
+                                <li><div class="btn-cart"><a href="dangnhap.html">Đăng nhập</a></div></li>
+                                <li><div class="btn-cart"><a href="dangki.html">Đăng kí</a></div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <section class="gioo">
+        <h2>sản phẩm</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>giá</th>
+                        <th>số lượng</th>
+                        <th>chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="anh/11.jpg" alt=""><span class="title"></span>Áo</td><td><p><span class="prices">90000</span><sup>đ</sup></p></td><td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td><td ><span class="cart-delete">xóa</span></td></tr>
+                    <tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="uploads/3 (10).jpg" alt=""><span class="title">mèo ba tư</span></td><td><p><span class="prices">1250000</span><sup>đ</sup></p></td><td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td><td ><span class="cart-delete">xóa</span></td></tr>
+                    <tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="anh/5.jpg" alt=""><span class="title">quần</span></td><td><p><span class="prices">860000</span><sup>đ</sup></p></td><td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td><td ><span class="cart-delete">xóa</span></td></tr>
+                    <tr><td style="display: flex; align-items: center;"><img style="width: 70px;" src="anh/anh1.png" alt=""><span class="title">Mèo lông dài</span></td><td><p><span class="prices">2450000</span><sup>đ</sup></p></td><td><input style="width: 30px; outline:none;" type="number" value="1" min="1"></td><td ><span class="cart-delete">xóa</span></td></tr>
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="gia">
+                <br>
+                <p style="font-weight: bold;">Tổng tiền:<span>0</span><sup>đ</sup></p>
+                <button type="button" class="btn"><a href="thanhtoan.html">Thanh Toán</a></button>
+            </div>
+        </form>
+    </section>
+    <article>
+        <!-- <section>
+            <div class="dangky">
+                <fieldset id="thongtincn">
+                    <legend><b>Thông tin cá nhân</b></legend>
+                    <table width="700" cellpadding="0" cellspacing="2" >
+                        <tr>
+                            <td width="148" height="24" >
+                                <p>Họ và tên:</p>
+                            </td>
+                            <td>
+                                <input class="hoten" type="tex" name="txthoten">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Địa chỉ:
+                            </td>
+                            <td>
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="23">
+                                <p>Điện thoại:</p>
+                            </td>
+                            <td>
+                                <input type="tel">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="25">
+                                Email:
+                            </td>
+                            <td>
+                                <input class="email" type="email" name="txtemail">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <div class="GGG">
+                    <button type="button" class="btn"><a href="">Thanh Toán</a></button>
+                </div>
+        </section> -->
+ </article>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get  Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>62TH5</h4>
+                <ul>
+                    <li><a href="#">By team62th5</a></li>
+                    <li><a href="#">Đại học Thủy Lợi</a></li>
+                    <li><a href="#">175, Tây Sơn, Đống Đa, Hà Nội</a></li>
+                    <li><a href="#">SDT: 0123456789</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+        // var GH = localStorage.getItem("manhd1")
+        // var abc = JSON.parse(GH)
+        // var addtr = document.createElement("tr")
+		// var trcontent = abc
+		// addtr.innerHTML = trcontent
+		// var cartTable = document.querySelector("tbody")
+		// cartTable.append(addtr)
+
+		function showthanhtoan() {
+        var GH = localStorage.getItem("manhdz")
+        var abc = JSON.parse(GH)
+        var addtr = document.createElement("tr")
+		var trcontent = abc
+		addtr.innerHTML = trcontent
+		var cartTable = document.querySelector("tbody")
+		cartTable.append(addtr)
+
+        // var GH = localStorage.getItem("manhdzz")
+        // var abc = JSON.parse(GH)
+        // var addtr = document.createElement("tr")
+		// var trcontent = abc
+		// addtr.innerHTML = trcontent
+		// var cartTable = document.querySelector("tbody")
+		// cartTable.append(addtr)
+
+        // var GH = localStorage.getItem("manhdzzz")
+        // var abc = JSON.parse(GH)
+        // var addtr = document.createElement("tr")
+		// var trcontent = abc
+		// addtr.innerHTML = trcontent
+		// var cartTable = document.querySelector("tbody")
+		// cartTable.append(addtr)
+
+        deletecart()
+		cartTT()
+    }
+    showthanhtoan()
+
+    function cartTT (){
+			var cartIteam = document.querySelectorAll("tbody tr")
+			var totalC = 0
+			// console.log(cartIteam.length)
+			for(var i=0;i<cartIteam.length;i++){
+				var inputValue = cartIteam[i].querySelector("input").value
+				// console.log(inputValue)
+				var productmoney = cartIteam[i].querySelector(".prices").innerHTML
+				// console.log(productmoney)
+				totalA = inputValue * productmoney
+				totalC = totalC + totalA
+				// totalD = totalC.toLocaleString('de-DE')
+			}
+			var cartTotalA = document.querySelector(".gia span")
+			var spgio = document.querySelector(".cart-icon span")
+			cartTotalA.innerHTML = totalC
+			spgio.innerHTML = cartIteam.length
+            localStorage.setItem("tongtien",JSON.stringify(totalC))
+			inputchange()
+		}
+// ------------------------------xóa giỏ hàng-------------------------------
+		function deletecart() {
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var prdT = document.querySelectorAll(".cart-delete")
+				prdT[i].addEventListener("click",function(event){
+					var cartDelet = event.target
+					var cartIT = cartDelet.parentElement.parentElement
+					cartIT.remove()
+					cartTT ()
+				})
+			}
+		}
+		function inputchange() {
+			var cartIteam = document.querySelectorAll("tbody tr")
+			for(var i=0;i<cartIteam.length;i++){
+		 		var inputValue = cartIteam[i].querySelector("input")
+				inputValue.addEventListener("change",function(){
+					cartTT ()
+				})
+			}
+		}
+</script>
+</html>
